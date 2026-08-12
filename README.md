@@ -6,7 +6,7 @@
 - [Permissions](#permissions)
 - [License](#license)
 
-
+## What this extension can do?
 Chrome extension **1.3.1**. One toolbar click in the **current window**:
 
 1. **Dedupe** — close duplicated tabs in the same window.  
