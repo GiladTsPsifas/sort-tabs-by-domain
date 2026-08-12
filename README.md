@@ -1,5 +1,9 @@
 # Sort Tabs by Domain
 
+<p align="center">
+  <img src="icons/icon128.png" alt="Sort Tabs by Domain icon" width="96" height="96" />
+</p>
+
 - [What it does](#what-it-does)
 - [Install](#install)
 - [Duplicate rules](#duplicate-rules)
@@ -15,13 +19,26 @@ Chrome extension **1.3.1**. One toolbar click in the **current window**:
    (Keeps one; never closes pinned; prefers active / shorter URL.)
 2. **Sort** — group unpinned tabs by **hostname → path → title**.
 
+### Before
+
+Messy order — same sites scattered across the window:
+
+![Tabs before sorting](docs/tabs-before.png)
+
+### After
+
+One click — tabs grouped by domain:
+
+![Tabs after sorting](docs/tabs-after.png)
+
 ## Install
 
 1. Clone this repository: https://github.com/GiladTsPsifas/sort-tabs-by-domain
 2. Open `chrome://extensions`
 3. Enable **Developer mode**
 4. **Load unpacked** → select this repository’s root folder (the one with `manifest.json`)
-5. **Reload** the extension after pulling code changes
+5. Find the teal **X** icon in the toolbar (pin it if needed) and click to run
+6. **Reload** the extension after pulling code changes
 
 ## Duplicate rules
 
