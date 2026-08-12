@@ -1,10 +1,18 @@
 # Sort Tabs by Domain
 
-- [Duplication rules)](#options-duplicate-rules)
+- [Duplication rules](#options-duplicate-rules)
 - [Undo option](#undo-60-seconds)
 - [Installation guide](#install-load-unpacked)
 - [Permissions](#permissions)
 - [License](#license)
+
+## Install
+
+1. Clone this repository
+2. Open `chrome://extensions`
+3. Enable **Developer mode**
+4. **Load unpacked** → select this repository’s root folder (the one with `manifest.json`)
+5. **Reload** the extension after pulling code changes
 
 ## What this extension can do?
 Chrome extension **1.3.1**. One toolbar click in the **current window**:
@@ -15,7 +23,7 @@ Chrome extension **1.3.1**. One toolbar click in the **current window**:
 
 
 
-## Options (duplicate rules)
+## Duplicate rules
 
 Right-click the extension → **Options**, or open details → **Extension options**.
 
@@ -33,19 +41,12 @@ Right-click the extension → **Options**, or open details → **Extension optio
 
 Toggles save automatically (`chrome.storage.sync`).
 
-## Undo (60 seconds)
+## Undo
 
 After a run, the badge shows **U**. Within **60s**, undo with `⌘⇧Y` / `Ctrl+Shift+Y`.
 
 Shortcuts: `chrome://extensions/shortcuts`
 
-## Install (Load unpacked)
-
-1. Clone this repository
-2. Open `chrome://extensions`
-3. Enable **Developer mode**
-4. **Load unpacked** → select this repository’s root folder (the one with `manifest.json`)
-5. **Reload** the extension after pulling code changes
 
 ## Permissions
 
