@@ -13,7 +13,7 @@
 
 ## What it does
 
-Chrome extension **1.3.2**. One toolbar click in the **current window**:
+Chrome extension **1.3.3**. One toolbar click in the **current window**:
 
 1. **Dedupe** — close duplicate tabs in the same window.  
    (Keeps one; never closes pinned; prefers active / shorter URL.)
@@ -26,7 +26,7 @@ Chrome extension **1.3.2**. One toolbar click in the **current window**:
 2. Open `chrome://extensions`
 3. Enable **Developer mode**
 4. **Load unpacked** → select this repository’s root folder (the one with `manifest.json`)
-5. Find the **stacked tabs + check** icon in the toolbar (pin it if needed) and click to run
+5. Find the **sorted bars** icon (teal square, three cream lines) in the toolbar — pin it if needed — and click to run
 6. **Reload** the extension after pulling code changes
 
 ## Duplicate rules
