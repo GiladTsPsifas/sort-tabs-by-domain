@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sort Tabs by Domain — Options</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Sort Tabs by Domain</h1>
+        <p class="lead">
+          Configure which tabs count as duplicates when you click the extension.
+          Sort by domain is always applied. Changes save automatically.
+        </p>
+      </header>
+
+      <section>
+        <h2>Duplicate matching</h2>
+        <div id="options-list" class="options-list"></div>
+      </section>
+
+      <section class="actions">
+        <button type="button" id="reset-defaults" class="btn secondary">
+          Reset to defaults
+        </button>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </section>
+
+      <footer>
+        <p>
+          Undo last run: <kbd>⌘⇧Y</kbd> / <kbd>Ctrl+Shift+Y</kbd> (while badge shows
+          <strong>U</strong>).
+        </p>
+      </footer>
+    </main>
+    <script src="common.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>
