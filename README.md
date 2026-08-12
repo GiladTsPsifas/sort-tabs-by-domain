@@ -1,8 +1,4 @@
-# <p align="left">
-  <img src="docs/extension-icon.png" alt="Sort Tabs by Domain — teal square with three sorted bars" width="128" height="128" />
-</p> Sort Tabs by Domain
-
-
+# <img src="docs/extension-icon.png" alt="" width="32" height="32" align="absmiddle"> Sort Tabs by Domain
 
 - [What it does](#what-it-does)
 - [Install](#install)
@@ -18,7 +14,6 @@ Chrome extension **1.3.3**. One toolbar click in the **current window**:
 1. **Dedupe** — close duplicate tabs in the same window.  
    (Keeps one; never closes pinned; prefers active / shorter URL.)
 2. **Sort** — group unpinned tabs by **hostname → path → title**.
-
 
 ## Install
 
