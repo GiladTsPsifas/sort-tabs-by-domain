@@ -1,6 +1,6 @@
-- [Options (duplicate rules)](#options-duplicate-rules)
-- [Undo (60 seconds)](#undo-60-seconds)
-- [Install (Load unpacked)](#install-load-unpacked)
+- [Duplication rules)](#options-duplicate-rules)
+- [Undo option](#undo-60-seconds)
+- [Installation guide](#install-load-unpacked)
 - [Permissions](#permissions)
 - [License](#license)
 
