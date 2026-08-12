@@ -1,11 +1,12 @@
 # Sort Tabs by Domain
 
-Chrome extension **1.3.1**: one toolbar click in the **current window**:
+Chrome extension **1.3.1**. One toolbar click in the **current window**:
 
-1. **Dedupe** — close tabs that match under your **configurable** URL rules (keeps one; never closes pinned; prefers active / shorter URL)
-2. **Sort** unpinned tabs: **hostname → path → title**
+1. **Dedupe** — close duplicated tabs in the same window.  
+   (Keeps one; never closes pinned; prefers active / shorter URL.)
+2. **Sort** — order unpinned tabs by **hostname → path → title**.
 
-No tab grouping (Chrome cannot name the OS window from an extension).
+Does not create or rename tab groups (Chrome cannot name the OS window from an extension).
 
 ## Options (duplicate rules)
 
@@ -23,11 +24,11 @@ Right-click the extension → **Options**, or open details → **Extension optio
 | Sort query params **on** | param order ignored |
 | Lowercase host **on** | host case-insensitive |
 
-Changes save as you toggle (synced via `chrome.storage.sync`).
+Toggles save automatically (`chrome.storage.sync`).
 
 ## Undo (60 seconds)
 
-Badge **U** after a run. Within **60s**: `⌘⇧Y` / `Ctrl+Shift+Y`.
+After a run, the badge shows **U**. Within **60s**, undo with `⌘⇧Y` / `Ctrl+Shift+Y`.
 
 Shortcuts: `chrome://extensions/shortcuts`
 
@@ -43,7 +44,7 @@ Shortcuts: `chrome://extensions/shortcuts`
 
 | Permission | Why |
 |------------|-----|
-| `tabs` | URLs, move/create/remove |
+| `tabs` | Read URLs; move / create / remove tabs |
 | `storage` | Undo snapshot + options |
 | `alarms` | Clear undo badge after TTL |
 
