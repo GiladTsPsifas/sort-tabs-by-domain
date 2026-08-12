@@ -1,6 +1,6 @@
 # Sort Tabs by Domain
 
-<p align="center">
+<p align="left">
   <img src="docs/extension-icon.png" alt="Sort Tabs by Domain — teal square with three sorted bars" width="128" height="128" />
 </p>
 
