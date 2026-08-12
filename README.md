@@ -1,7 +1,7 @@
 # Sort Tabs by Domain
 
 <p align="center">
-  <img src="icons/icon128.png" alt="Sort Tabs by Domain icon" width="96" height="96" />
+  <img src="docs/extension-icon.png" alt="Sort Tabs by Domain — teal square with three sorted bars" width="128" height="128" />
 </p>
 
 - [What it does](#what-it-does)
