@@ -6,7 +6,11 @@ Chrome extension **1.3.1**. One toolbar click in the **current window**:
    (Keeps one; never closes pinned; prefers active / shorter URL.)
 2. **Sort** — order unpinned tabs by **hostname → path → title**.
 
-Does not create or rename tab groups (Chrome cannot name the OS window from an extension).
+- [Options (duplicate rules)](#options-duplicate-rules)
+- [Undo (60 seconds)](#undo-60-seconds)
+- [Install (Load unpacked)](#install-load-unpacked)
+- [Permissions](#permissions)
+- [License](#license)
 
 ## Options (duplicate rules)
 
