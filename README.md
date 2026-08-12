@@ -19,17 +19,6 @@ Chrome extension **1.3.1**. One toolbar click in the **current window**:
    (Keeps one; never closes pinned; prefers active / shorter URL.)
 2. **Sort** — group unpinned tabs by **hostname → path → title**.
 
-### Before
-
-Messy order — same sites scattered across the window:
-
-![Tabs before sorting](docs/tabs-before.png)
-
-### After
-
-One click — tabs grouped by domain:
-
-![Tabs after sorting](docs/tabs-after.png)
 
 ## Install
 
