@@ -1,10 +1,11 @@
+# Sort Tabs by Domain
+
 - [Duplication rules)](#options-duplicate-rules)
 - [Undo option](#undo-60-seconds)
 - [Installation guide](#install-load-unpacked)
 - [Permissions](#permissions)
 - [License](#license)
 
-# Sort Tabs by Domain
 
 Chrome extension **1.3.1**. One toolbar click in the **current window**:
 
