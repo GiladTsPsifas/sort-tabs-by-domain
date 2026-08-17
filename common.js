@@ -72,6 +72,7 @@ const TRACKING_PARAM_KEYS = [
  * @property {boolean} sortQueryParams
  * @property {boolean} lowercaseHost
  * @property {boolean} samePullRequest
+ * @property {boolean} sameJiraBoard
  */
 const DEFAULT_SETTINGS = {
   stripTrailingSlash: true,
@@ -83,7 +84,15 @@ const DEFAULT_SETTINGS = {
   sortQueryParams: true,
   lowercaseHost: true,
   samePullRequest: true,
+  sameJiraBoard: true,
 };
+
+/** Jira board UI-only query keys (keep filters like assignee). */
+const JIRA_BOARD_UI_PARAM_KEYS = [
+  "selectedissue",
+  "selectedissueindex",
+  "atlorigin",
+];
 
 /**
  * Collapse PR/MR view subpaths so one ticket/PR = one tab for dedupe.
@@ -108,6 +117,35 @@ function collapsePullRequestPath(pathname) {
     return m[1];
   }
   return pathname;
+}
+
+/**
+ * Jira Software board: /jira/software/.../boards/60
+ *
+ * @param {string} pathname
+ * @returns {boolean}
+ */
+function isJiraBoardPath(pathname) {
+  return /\/boards\/\d+\/?$/i.test(pathname || "");
+}
+
+/**
+ * Drop board chrome params so board + selectedIssue ≡ same board.
+ *
+ * @param {URL} u
+ */
+function stripJiraBoardUiParams(u) {
+  if (!u.search) {
+    return;
+  }
+  const params = new URLSearchParams(u.search);
+  const drop = new Set(JIRA_BOARD_UI_PARAM_KEYS);
+  for (const key of [...params.keys()]) {
+    if (drop.has(key.toLowerCase())) {
+      params.delete(key);
+    }
+  }
+  u.search = params.toString() ? `?${params.toString()}` : "";
 }
 
 /**
@@ -187,6 +225,10 @@ function normalizeUrlForDedupe(url, settings) {
       }
     }
 
+    if (settings.sameJiraBoard && isJiraBoardPath(u.pathname)) {
+      stripJiraBoardUiParams(u);
+    }
+
     if (settings.ignoreHash) {
       u.hash = "";
     }
@@ -246,6 +288,11 @@ const SETTINGS_META = [
     key: "samePullRequest",
     label: "Same GitHub/GitLab PR as duplicate",
     help: "/pull/121 and /pull/121/changes (files, commits, checks) count as one",
+  },
+  {
+    key: "sameJiraBoard",
+    label: "Same Jira board as duplicate",
+    help: "board URL with or without selectedIssue counts as one (keeps assignee / filters)",
   },
   {
     key: "ignoreHash",

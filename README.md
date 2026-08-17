@@ -9,7 +9,7 @@
 
 ## What it does
 
-Chrome extension **1.3.3**. One toolbar click in the **current window**:
+Chrome extension **1.3.4**. One toolbar click in the **current window**:
 
 1. **Dedupe** — close duplicate tabs in the same window.  
    (Keeps one; never closes pinned; prefers active / shorter URL.)
@@ -32,6 +32,7 @@ Right-click the extension → **Options**, or open details → **Extension optio
 |-------------------|--------|
 | Trailing slash **on** | `/path` ≡ `/path/` |
 | Same GitHub/GitLab PR **on** | `/pull/121` ≡ `/pull/121/changes` (files, commits, checks, …) |
+| Same Jira board **on** | board ≡ board + `selectedIssue` (keeps assignee / filters) |
 | Ignore hash **on** | ignore `#fragment` |
 | Strip tracking params **on** | drop `utm_*`, `fbclid`, `gclid`, … |
 | Ignore all query **off** | if on, only host + path must match |

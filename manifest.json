@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Sort Tabs by Domain",
-  "version": "1.3.3",
-  "description": "Dedupe (configurable URL rules, same GitHub PR), sort by domain/path/title, undo.",
+  "version": "1.3.4",
+  "description": "Dedupe (configurable URL rules, same GitHub PR / Jira board), sort by domain/path/title, undo.",
   "permissions": ["tabs", "storage", "alarms"],
   "action": {
     "default_title": "Sort tabs by domain & remove duplicates",
